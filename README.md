@@ -10,11 +10,13 @@
 <h2>Progress of the project</h2>
 
 <ul>
-    <li>composer require laravel/ui</li>
-    <li>php artisan ui bootstrap --auth</li>
-    <li>npm install</li>
-    <li>run dev</li>
-    <li>created migrations</li>
-    <li>modified users factory</li>
-    <li>created admin user seeder (email - admin@admin.lt ; psw - admin123)</li>
+    <li>Composer require laravel/ui</li>
+    <li>Php artisan ui bootstrap --auth</li>
+    <li>Npm install</li>
+    <li>Run dev</li>
+    <li>Created migrations</li>
+    <li>Modified users factory</li>
+    <li>Created admin user seeder (email - admin@admin.lt ; psw - admin123)</li>
+    <li>------------------</li>
+    <li>Created models and relations</li>
 </ul>

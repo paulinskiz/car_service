@@ -16,6 +16,7 @@ class CreateMaintenancesTable extends Migration
         Schema::create('maintenances', function (Blueprint $table) {
             $table->id();
             $table->foreignId('vehicle_id');
+            $table->foreignId('user_id')->nullable();
             $table->string('order_description');
             $table->string('wishes')->nullable();
             $table->string('mileage')->nullable();

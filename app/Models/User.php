@@ -8,6 +8,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use App\Models\Role;
+use App\Models\Vehicle;
+use App\Models\Maintenance;
+use App\Models\Comment;
 
 class User extends Authenticatable
 {
@@ -49,5 +52,20 @@ class User extends Authenticatable
     public function role()
     {
         return $this->hasOne(Role::class);
+    }
+
+    public function vehicles()
+    {
+        return $this->belongsToMany(Vehicle::class);
+    }
+
+    public function maintenances()
+    {
+        return $this->hasMany(Maintenance::class);
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
     }
 }
