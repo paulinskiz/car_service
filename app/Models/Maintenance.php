@@ -11,7 +11,7 @@ class Maintenance extends Model
 {
     use HasFactory;
 
-    private $fillabe = [
+    protected $fillabe = [
         'vehicle_id',
         'order_description',
         'status',

@@ -12,7 +12,7 @@ class Vehicle extends Model
 {
     use HasFactory;
 
-    private $fillable = [
+    protected $fillable = [
         'manufacturer',
         'model',
         'licence_plate',
